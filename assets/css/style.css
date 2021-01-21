@@ -1,0 +1,41 @@
+div{
+    display: inline-block;
+    border-radius: 100%;
+
+}
+
+#bb{
+    background-color: lightsalmon;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    border: 1px black solid;
+}
+
+#sb{
+    background-color: #234645;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 1px black solid;
+    margin-left: 100px;
+}
+
+#bb:active{
+    transform: translateX(113px) ;
+    /* margin-left: 100px; */
+    transition: 3s;
+    transition-timing-function: linear;
+}
+
+#bb:active + #sb{
+    transform: translateX(300px);
+    transition: 5s;
+    transition-delay: 3s;
+}
+
+p{
+    padding-top: 70px;
+    padding-left: 20px;
+    display: inline-block;
+}
